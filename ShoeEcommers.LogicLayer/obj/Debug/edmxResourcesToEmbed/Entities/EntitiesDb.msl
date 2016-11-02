@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ecommersModelStoreContainer" CdmEntityContainer="ecommersEntities">
+    <EntitySetMapping Name="AttributeSkus">
+      <EntityTypeMapping TypeName="ecommersModel.AttributeSkus">
+        <MappingFragment StoreEntitySet="AttributeSkus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdGroup" ColumnName="IdGroup" />
+          <ScalarProperty Name="IdSku" ColumnName="IdSku" />
+          <ScalarProperty Name="ValueLabel" ColumnName="ValueLabel" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="ecommersModel.Brands">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ecommersModel.Categories">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdDepartment" ColumnName="IdDepartment" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="ecommersModel.Customers">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="ecommersModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Department1" ColumnName="Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupsAttributes">
+      <EntityTypeMapping TypeName="ecommersModel.GroupsAttributes">
+        <MappingFragment StoreEntitySet="GroupsAttributes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="TypeGroup" ColumnName="TypeGroup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImagesSkus">
+      <EntityTypeMapping TypeName="ecommersModel.ImagesSkus">
+        <MappingFragment StoreEntitySet="ImagesSkus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdSku" ColumnName="IdSku" />
+          <ScalarProperty Name="UrlImage" ColumnName="UrlImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetail">
+      <EntityTypeMapping TypeName="ecommersModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdOrder" ColumnName="IdOrder" />
+          <ScalarProperty Name="IdSku" ColumnName="IdSku" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ecommersModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ecommersModel.Products">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdBrand" ColumnName="IdBrand" />
+          <ScalarProperty Name="IdSubcategory" ColumnName="IdSubcategory" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skus">
+      <EntityTypeMapping TypeName="ecommersModel.Skus">
+        <MappingFragment StoreEntitySet="Skus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdProduct" ColumnName="IdProduct" />
+          <ScalarProperty Name="Sku" ColumnName="Sku" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusOrders">
+      <EntityTypeMapping TypeName="ecommersModel.StatusOrders">
+        <MappingFragment StoreEntitySet="StatusOrders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategories">
+      <EntityTypeMapping TypeName="ecommersModel.SubCategories">
+        <MappingFragment StoreEntitySet="SubCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdCategory" ColumnName="IdCategory" />
+          <ScalarProperty Name="SubCategory" ColumnName="SubCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

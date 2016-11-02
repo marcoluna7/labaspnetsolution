@@ -1,0 +1,9 @@
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.WebAdminDynamic.dll
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.WebAdminDynamic.pdb
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.csprojResolveAssemblyReference.cache
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.dll
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.pdb
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\EntityFramework.dll
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.dll
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.pdb
+C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\EntityFramework.xml
