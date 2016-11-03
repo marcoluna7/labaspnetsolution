@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<IGrouping<ShoeEcommers.LogicLayer.Modelos.GroupsSkusFront, ShoeEcommers.LogicLayer.Entities.Skus>>
+@{
     ViewBag.Title = "Campaign";
 }
 
@@ -105,42 +106,35 @@
             </div>
           </aside>
           <div class="clickoneroFilter-products">
-            <div class="clickoneroFP-item">
-              <div class="clickoneroFP-image"><a href="#"><img src="/clickoneroInclude/images/assets/leggings1.jpg" alt="Leggings 1"></a>
-                <div class="clickoneroFP-overlay">
-                  <div class="clickoneroFP-soldout">
-                    <h3>SOLD OUT</h3><a href="waitinglist.html" data-fancyboxWidth="745" class="clickoneroFancybox">Añadir a waitinglist</a>
+
+          @foreach (var item in Model)
+          {
+              <div class="clickoneroFP-item">
+                  <div class="clickoneroFP-image"><a href="#">
+                          <img src="//@item.First().Thumbnail" alt="Leggings 4">
+                      </a>
+                      <div class="clickoneroFP-overlay">
+                          <div class="clickoneroFP-productSize">
+                              @foreach (var sku in item)
+                              {
+                                  <input type="radio" name="ckSize" value="@sku.Sku">
+                              }
+                              <input type="submit" value="Añadir a carrito" class="clickoneroBtnCart">
+                              <p class="clickoneroError">Por favor escoja una talla</p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-              </div>
-              <h3>Denim look leggings</h3>
-              <h4>Pull &amp; Bear</h4><span class="clickoneroFP-actualPrice">$540</span><span class="clickoneroFP-listPrice">$760</span>
-              <div class="clickoneroFP-winWinbits"><span>GANA</span><em class="clickoneroIcon clickoneroWinbits12px"></em>
-                <label>307</label>
-              </div>
-            </div>
-            <div class="clickoneroFP-item">
-              <div class="clickoneroFP-image"><a href="#"><img src="/clickoneroInclude/images/assets/leggings4.jpg" alt="Leggings 4"></a>
-                <div class="clickoneroFP-overlay">
-                  <div class="clickoneroFP-productSize">
-                    <input type="radio" name="ckSize" value="XS" data-soldout="true">
-                    <input type="radio" name="ckSize" value="S">
-                    <input type="radio" name="ckSize" value="M">
-                    <input type="radio" name="ckSize" value="L">
-                    <input type="radio" name="ckSize" value="XL">
-                    <input type="radio" name="ckSize" value="XXXL">
-                    <input type="submit" value="Añadir a carrito" class="clickoneroBtnCart">
-                    <p class="clickoneroError">Por favor escoja una talla</p>
+                  <h3>Denim look leggings</h3>
+                  <h4>Pull &amp; Bear</h4><span class="clickoneroFP-actualPrice">$540</span><span class="clickoneroFP-listPrice">$760</span>
+                  <div class="clickoneroFP-winWinbits"><span>GANA</span><em class="clickoneroIcon clickoneroWinbits12px"></em>
+                      <label>307</label>
                   </div>
-                </div>
               </div>
-              <h3>Denim look leggings</h3>
-              <h4>Pull &amp; Bear</h4><span class="clickoneroFP-actualPrice">$540</span><span class="clickoneroFP-listPrice">$760</span>
-              <div class="clickoneroFP-winWinbits"><span>GANA</span><em class="clickoneroIcon clickoneroWinbits12px"></em>
-                <label>307</label>
-              </div>
-            </div>
-            <div class="clickoneroFP-item">
+          }
+
+
+
+          <div class="clickoneroFP-item">
               <div class="clickoneroFP-image"><a href="#"><img src="/clickoneroInclude/images/assets/leggings5.jpg" alt="Leggings 5"></a>
                 <div class="clickoneroFP-overlay">
                   <div class="clickoneroFP-productSize">
