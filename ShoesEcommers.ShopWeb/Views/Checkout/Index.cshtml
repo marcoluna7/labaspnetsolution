@@ -1,0 +1,9 @@
+﻿@using ShoeEcommers.LogicLayer.Modelos
+@model List <ShopingCar>
+@{
+    ViewBag.Title = "Index";
+}
+@if (null == Model)
+{
+    <h2>No existen productos en tu carrito</h2>
+}

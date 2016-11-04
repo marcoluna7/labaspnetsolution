@@ -11,6 +11,7 @@
           <EntitySet Name="Campaigns" EntityType="ecommersModel.Store.Campaigns" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="CampaignsProducts" EntityType="ecommersModel.Store.CampaignsProducts" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Categories" EntityType="ecommersModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ContactUs" EntityType="ecommersModel.Store.ContactUs" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Customers" EntityType="ecommersModel.Store.Customers" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Department" EntityType="ecommersModel.Store.Department" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="GroupsAttributes" EntityType="ecommersModel.Store.GroupsAttributes" store:Type="Tables" Schema="dbo" />
@@ -122,6 +123,16 @@
           <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="IdDepartment" Type="int" Nullable="false" />
           <Property Name="Category" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ContactUs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Comments" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Customers">
           <Key>
@@ -487,6 +498,7 @@
             <End Role="Campaigns" EntitySet="Campaigns" />
             <End Role="Products" EntitySet="Products" />
           </AssociationSet>
+          <EntitySet Name="ContactUs" EntityType="ecommersModel.ContactUs" />
         </EntityContainer>
         <EntityType Name="AttributeSkus">
           <Key>
@@ -802,6 +814,16 @@
           <End Type="ecommersModel.Campaigns" Role="Campaigns" Multiplicity="*" />
           <End Type="ecommersModel.Products" Role="Products" Multiplicity="*" />
         </Association>
+        <EntityType Name="ContactUs">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FullName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Comments" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="false" Precision="3" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -976,6 +998,17 @@
               <ScalarProperty Name="Id" ColumnName="IdCampaign" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="ContactUs">
+            <EntityTypeMapping TypeName="ecommersModel.ContactUs">
+              <MappingFragment StoreEntitySet="ContactUs">
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

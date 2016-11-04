@@ -5,12 +5,11 @@ using System.Text;
 
 namespace ShoeEcommers.LogicLayer.Modelos
 {
-    public class GroupsSkusFront
+    public class SkuSelectProduct
     {
+        public int Quantity { get; set; }
+        public string LookSize { get; set; }
         public int IdProduct { get; set; }
-        public string ValueGroup { get; set; }
-        
-        
-
+        public string LookColor { get; set; }
     }
 }

@@ -32,6 +32,7 @@
         <AssociationConnector Association="ecommersModel.FK_Skus_Products" ManuallyRouted="false" />
         <EntityTypeShape EntityType="ecommersModel.Campaigns" Width="1.5" PointX="3.8779101464328871" PointY="14.039457074384883" />
         <AssociationConnector Association="ecommersModel.CampaignsProducts" />
+        <EntityTypeShape EntityType="ecommersModel.ContactUs" Width="1.5" PointX="11.659332945784243" PointY="24.339474495658408" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

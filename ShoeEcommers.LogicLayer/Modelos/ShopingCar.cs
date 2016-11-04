@@ -5,12 +5,9 @@ using System.Text;
 
 namespace ShoeEcommers.LogicLayer.Modelos
 {
-    public class GroupsSkusFront
+    public class ShopingCar
     {
-        public int IdProduct { get; set; }
-        public string ValueGroup { get; set; }
-        
-        
-
+        public int IdSku { get; set; }
+        public int Quantity { get; set; }
     }
 }

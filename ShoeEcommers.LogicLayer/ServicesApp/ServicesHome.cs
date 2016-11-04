@@ -25,5 +25,13 @@ namespace ShoeEcommers.LogicLayer.ServicesApp
             return _result;
         }
 
+        public void SaveContactUs(ContactUs contact)
+        {
+            contact.DateCreated = DateTime.Now;
+            _dc.ContactUs.Add(contact);
+            _dc.SaveChanges();
+
+        }
+
     }
 }

@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomEntities\ContactUs.cs" />
     <Compile Include="DataObjects\ConnectionProvider.cs" />
     <Compile Include="Entities\AttributeSkus.cs">
       <DependentUpon>EcommersEntities.tt</DependentUpon>
@@ -74,6 +75,9 @@
       <DependentUpon>EcommersEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Categories.cs">
+      <DependentUpon>EcommersEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\ContactUs.cs">
       <DependentUpon>EcommersEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Customers.cs">
@@ -128,6 +132,8 @@
     <Compile Include="Modelos\Customers.cs" />
     <Compile Include="Modelos\DataHomeSite.cs" />
     <Compile Include="Modelos\GroupsSkus.cs" />
+    <Compile Include="Modelos\ShopingCar.cs" />
+    <Compile Include="Modelos\SkuSelectProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -190,9 +196,7 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomEntities\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

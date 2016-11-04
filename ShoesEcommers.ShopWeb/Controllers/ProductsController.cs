@@ -8,10 +8,9 @@ using ShoeEcommers.LogicLayer.Modelos;
 
 namespace ShoesEcommers.ShopWeb.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : ShopBaseController
     {
         public readonly ecommersEntities1 _dc;
-
         public ProductsController()
         {
             _dc = new ecommersEntities1();
@@ -27,17 +26,25 @@ namespace ShoesEcommers.ShopWeb.Controllers
             var query = from p in _dc.Products
                 join s in _dc.Skus on p.Id equals s.IdProduct
                 join a in _dc.AttributeSkus on s.Id equals a.IdSku
-                        where p.Campaigns.Any(c => c.Id == id)
+                        where p.Campaigns.Any(c => c.Id == id) && p.Active == true
                         group s by new GroupsSkusFront { IdProduct = p.Id, ValueGroup= a.ValueLabel } into groupsData
                 select groupsData;
-
             List<IGrouping<GroupsSkusFront, Skus>> result = query.ToList();
             return View(result);
         }
 
         public ActionResult Details(int id)
         {
-            return View();
+            Products product = _dc.Products.First(p=>p.Id == id);
+            return View(product);
+        }
+
+        [HttpPost]
+        public ActionResult Details(SkuSelectProduct data)
+        {
+            
+            Products product = _dc.Products.First(p => p.Id == 1);
+            return View(product);
         }
 
         protected override void Dispose(bool disposing)
@@ -46,6 +53,8 @@ namespace ShoesEcommers.ShopWeb.Controllers
             base.Dispose(disposing);
         }
     }
+
+  
 
     
 }
