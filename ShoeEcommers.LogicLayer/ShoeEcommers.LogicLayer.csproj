@@ -131,7 +131,7 @@
     <Compile Include="Markets\MarketCategories.cs" />
     <Compile Include="Modelos\Customers.cs" />
     <Compile Include="Modelos\DataHomeSite.cs" />
-    <Compile Include="Modelos\GroupsSkus.cs" />
+    <Compile Include="Modelos\GroupsSkusFront.cs" />
     <Compile Include="Modelos\ShopingCar.cs" />
     <Compile Include="Modelos\SkuSelectProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

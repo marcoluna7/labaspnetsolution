@@ -9,8 +9,5 @@ namespace ShoeEcommers.LogicLayer.Modelos
     {
         public int IdProduct { get; set; }
         public string ValueGroup { get; set; }
-        
-        
-
     }
 }
