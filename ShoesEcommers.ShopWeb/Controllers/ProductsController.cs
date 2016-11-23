@@ -10,10 +10,10 @@ namespace ShoesEcommers.ShopWeb.Controllers
 {
     public class ProductsController : ShopBaseController
     {
-        public readonly ecommersEntities1 _dc;
+        public readonly ecommersEntities _dc;
         public ProductsController()
         {
-            _dc = new ecommersEntities1();
+            _dc = new ecommersEntities();
         }
 
         public ActionResult Index()
@@ -42,8 +42,14 @@ namespace ShoesEcommers.ShopWeb.Controllers
         [HttpPost]
         public ActionResult Details(SkuSelectProduct data)
         {
-            
-            Products product = _dc.Products.First(p => p.Id == 1);
+
+            Products product = _dc.Products.First(p => p.Id == data.IdProduct);
+            var query = product.Skus.Where(s => s.Sku == data.LookSize);
+            if (query.Any() && data.Quantity > 0)
+            {
+
+            }
+            ViewBag.ErrorMessage = "Selecciona una talla o ingresa la cantidad";
             return View(product);
         }
 
