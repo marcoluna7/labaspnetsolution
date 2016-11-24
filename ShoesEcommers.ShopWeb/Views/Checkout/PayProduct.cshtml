@@ -1,5 +1,23 @@
 ﻿@{
     ViewBag.Title = "PayProduct";
+    Layout = "~/Views/Shared/_LayoutCheckout.cshtml";
+    ViewBag.dataAngular = "ng-app='orderApp'";
 }
 
-<h2>PayProduct</h2>
+
+
+<hr/>
+<div class="text-center well well-sm">
+    <h2>Módulo de pagos</h2>
+</div>
+<div ng-view></div>
+
+
+
+@section scripts
+{
+    <script src="~/Scripts/app/orders/initorder.js"></script>
+    <script src="~/Scripts/app/orders/controllerCustomers.js"></script>
+    <script src="~/Scripts/app/orders/routers.js"></script>
+   
+}

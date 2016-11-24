@@ -30,6 +30,12 @@ namespace ShoesEcommers.ShopWeb.Controllers
         {
             return View();
         }
+        [Authorize]
+        public ActionResult Views(string id)
+        {
+            return PartialView(string.Format("~/Views/Shared/_{0}.cshtml", id));
+        }
+
 
 
 

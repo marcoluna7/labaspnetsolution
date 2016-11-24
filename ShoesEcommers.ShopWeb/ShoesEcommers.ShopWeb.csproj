@@ -426,6 +426,9 @@
     <Content Include="clickoneroInclude\include\js\script.js" />
     <Content Include="clickoneroInclude\include\js\scriptALL.js" />
     <Content Include="clickoneroInclude\include\js\scriptsHeader.js" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -678,6 +681,16 @@
     <Content Include="clickoneroInclude\include\less\styles\main.less" />
     <Content Include="clickoneroInclude\include\less\styles\modal.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\angular\angular-animate.min.js" />
+    <Content Include="Scripts\angular\angular-aria.min.js" />
+    <Content Include="Scripts\angular\angular-material.js" />
+    <Content Include="Scripts\angular\angular-messages.min.js" />
+    <Content Include="Scripts\angular\angular-route.js" />
+    <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="Scripts\angular\svg-assets-cache.js" />
+    <Content Include="Scripts\app\orders\controllerCustomers.js" />
+    <Content Include="Scripts\app\orders\initorder.js" />
+    <Content Include="Scripts\app\orders\routers.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -735,6 +748,8 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Checkout\Index.cshtml" />
     <Content Include="Views\Checkout\PayProduct.cshtml" />
+    <Content Include="Views\Shared\_LayoutCheckout.cshtml" />
+    <Content Include="Views\Shared\_CustomerData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
