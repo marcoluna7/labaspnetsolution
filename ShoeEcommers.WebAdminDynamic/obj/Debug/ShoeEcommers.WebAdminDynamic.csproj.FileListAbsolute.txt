@@ -7,3 +7,12 @@ C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEc
 C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.dll
 C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.pdb
 C:\Users\W530\Documents\Visual Studio 2012\Projects\ShoesEcomers.WebAdmin\ShoeEcommers.WebAdminDynamic\bin\EntityFramework.xml
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.WebAdminDynamic.dll
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.WebAdminDynamic.pdb
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\EntityFramework.dll
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.dll
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\ShoeEcommers.LogicLayer.pdb
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\bin\EntityFramework.xml
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.csprojResolveAssemblyReference.cache
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.dll
+C:\Users\Marco Luna\Documents\Visual Studio 2012\Projects\SolucionCursoAsp.net\labaspnetsolution\ShoeEcommers.WebAdminDynamic\obj\Debug\ShoeEcommers.WebAdminDynamic.pdb

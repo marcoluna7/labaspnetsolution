@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ShoeEcommers.LogicLayer.Entities;
 using ShoeEcommers.LogicLayer.Modelos;
+using ShoesEcommers.ShopWeb.Globals;
 
 namespace ShoesEcommers.ShopWeb.Controllers
 {
@@ -42,12 +43,12 @@ namespace ShoesEcommers.ShopWeb.Controllers
         [HttpPost]
         public ActionResult Details(SkuSelectProduct data)
         {
-
             Products product = _dc.Products.First(p => p.Id == data.IdProduct);
             var query = product.Skus.Where(s => s.Sku == data.LookSize);
             if (query.Any() && data.Quantity > 0)
             {
-
+                Vars.CurrentCar.AddProduct(query.First().Id, data.Quantity);
+                return Redirect("~/Checkout/Index");
             }
             ViewBag.ErrorMessage = "Selecciona una talla o ingresa la cantidad";
             return View(product);
@@ -59,7 +60,6 @@ namespace ShoesEcommers.ShopWeb.Controllers
             base.Dispose(disposing);
         }
     }
-
   
 
     
