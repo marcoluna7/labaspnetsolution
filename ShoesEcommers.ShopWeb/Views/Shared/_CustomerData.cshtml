@@ -1,0 +1,82 @@
+﻿<form class='form-horizontal' name="frmCustomer">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Nombre</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input placeholder="Nombre"
+                       type="text"
+                       max="50" ng-model="customer.Name" name="name" class="form-control" required/>
+            </div>
+            <span class="label label-danger" 
+                ng-show="frmCustomer.name.$error.required">¡Obligatorio!</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Apellido Paterno</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" max="50" ng-model="customer.FirstName" name="firstName" class="form-control" placeholder="Apellido paterno" required/>
+            </div>
+            <span class="label label-danger" 
+                ng-show="frmCustomer.firstName.$error.required">¡Obligatorio!</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Apellido Materno</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                <input type="text" max="50" ng-model="customer.LastName" name="lastName" class="form-control" placeholder="Apellido Materno" required/>
+            </div>
+            <span class="label label-danger" 
+                ng-show="frmCustomer.lastName.$error.required">¡Obligatorio!</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Fecha de Nacimiento</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-inbox"></i></span>
+                <input type="text" max="50" ng-model="customer.DateBirth" name="dateBirth" class="form-control" placeholder="Fecha de Nacimiento" required/>
+            </div>
+            <span class="label label-danger" 
+                ng-show="frmCustomer.dateBirth.$error.required">¡Obligatorio!</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Correo Electrónico</label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-inbox"></i></span>
+                <input type="email" max="50" ng-model="customer.Email" name="email" class="form-control" placeholder="Correo electrónico" required/>
+            </div>
+            <span class="label label-danger" 
+                ng-show="frmCustomer.email.$error.required">¡Obligatorio!</span>
+            
+            <span class="label label-danger" 
+                ng-show="frmCustomer.email.$error.email">¡Formato Incorrecto!</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-8">
+            <div class="input-group">
+                <button class="btn btn-success" ng-click="save()">Siguiente</button>
+            </div>
+        </div>
+    </div>
+
+       <div class="form-group">
+        <label class="col-sm-2 control-label"></label>
+        <div class="col-sm-8">
+            <span ng-class="classMessage">{{message}}</span>
+        </div>
+    </div>
+</form>
