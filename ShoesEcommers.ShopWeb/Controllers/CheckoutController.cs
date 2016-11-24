@@ -25,6 +25,12 @@ namespace ShoesEcommers.ShopWeb.Controllers
             return View(car);
         }
 
+        [Authorize]
+        public ActionResult PayProduct()
+        {
+            return View();
+        }
+
 
 
     }

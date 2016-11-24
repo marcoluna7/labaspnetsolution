@@ -734,6 +734,7 @@
     <Content Include="Views\Products\Campaign.cshtml" />
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Checkout\Index.cshtml" />
+    <Content Include="Views\Checkout\PayProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
